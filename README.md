@@ -2,12 +2,11 @@
 
 After 2 and half week of Javascript exercise. Here come to my first javascript game.
 
-I created when I study at BeCode in 2021.
+I created this game when I study at BeCode in 2021. It's part of my project.
 
-I also watched a tutorial to get some idea how to create it. 
 
-In this project I wrote in HTML, Css and Javascript. 
+In this project I wrote in <i>HTML, Css and Javascript</i>. 
 
 Here is how my web page look like 
 
-<img src="Rock%20Paper%20screenshot.png" alt="screenshot of rock paper scissor game">
+<img src="Rock Paper Scissor screenshot.png" alt="screenshot of rock paper scissor game">
