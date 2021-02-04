@@ -1,0 +1,105 @@
+body {
+    background-color: antiquewhite;
+    font-family: "MS Gothic", sans-serif;
+}
+h1 {
+    text-align: center;
+    background-color: darkseagreen;
+    padding: 5px;
+}
+
+#structure {
+    display : flex;
+    justify-content: center;
+    padding: 3px;
+    margin: 5px auto auto auto;
+}
+
+li {
+    font-weight: bold;
+    padding: 3px;
+}
+.selections {
+    display : flex;
+    justify-content: center ;
+    padding: 30px;
+}
+.selection {
+    border: none;
+    background: none;
+    outline :none;
+    font-size: 4rem;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+.selection:hover {
+    transform: scale(1.2) ;
+}
+
+.random {
+    border-radius: 25%;
+    font-size: 1rem;
+    background-color: darkseagreen;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+.random:hover {
+    transform: scale(1.2);
+}
+
+.picking {
+    display: grid;
+    justify-content: center ;
+    grid-template-columns: repeat(2, 1fr) ;
+    justify-items: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top:2rem;
+}
+
+.show-result {
+    text-align: center ;
+    margin: auto ;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+.show-score {
+    display: grid;
+    justify-content: center ;
+    grid-template-columns: repeat(2, 1fr) ;
+    justify-items: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding : 25px;
+}
+
+#comment {
+    border: 5px double darkseagreen;
+    display : grid;
+    justify-items: center;
+    margin: 25px auto auto;
+
+}
+
+#renew {
+    border-radius: 25%;
+    font-size: 1rem;
+    background-color: darkseagreen;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+    transition: 100ms;
+    padding: 10px;
+}
+
+#renew:hover {
+    transform : scale(1.2) ;
+}

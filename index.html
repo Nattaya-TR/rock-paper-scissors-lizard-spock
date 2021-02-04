@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale =1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissor Lizard Spock</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Rock Paper Scissor Lizard Spock</h1>
+    <div id="structure">
+        <h3>How to play</h3>
+        <ol>
+            <li>Choose your weapon</li>
+            <li>Click to beat the computer</li>
+            <li>Have some fun</li>
+        </ol>
+    </div>
+    <div class="selections">
+        <button type="button" class="selection" id="rock">✊</button>
+        <button type="button" class="selection" id="paper">✋</button>
+        <button type="button" class="selection" id="scissor">✌</button>
+        <button type="button" class="selection" id="lizard">🦎</button>
+        <button type="button" class="selection" id="spock">🖖</button>
+    </div>
+
+    <div class="beating">
+        <button type="button" class="random" id="cpu-choice">Let's beat Computer</button>
+    </div>
+
+    <div class="result">
+        <div class="picking">
+            <div>you pick
+                <span class="user-pick" id="you-pick"></span>
+            </div>
+            <div>Computer pick
+                <span class="computer-pick" id="com-pick"></span>
+            </div>
+        </div>
+
+        <div class="show-result" id="result"></div>
+        <div class="show-score">
+            <div class="user">You
+                <span class="score" id="user-score">0</span>
+            </div>
+            <div class="computer">Computer
+                <span class="score" id="com-score">0</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="reset">
+            <button type="reset" value="Reset" id="renew">Reset</button>
+    </div>
+
+    <div class="text" id="text-area">
+        <label for="comment"></label>
+        <textarea type="text" id="comment" rows="4" cols="35">What's in your mind??</textarea>
+    </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
