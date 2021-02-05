@@ -40,12 +40,19 @@ function ComPick () {
 
 // finding who is the winner
 function findWinner(_comChoice) {
-   let userChoice = document.getElementById("you-pick").innerText;
-   const index = allChoice.findIndex(Choice => Choice.name === userChoice);
+   let userPick = document.getElementById("you-pick").innerText;
+   const index = allChoice.findIndex(Choice => Choice.name === userPick);
    const selection = allChoice[index];
 
-   const userWin = isWinner(selection, _comChoice);
-   const comWin = isWinner(_comChoice, selection);
+//Check Who is the winner
+   const userWin = Winner(selection, _comChoice);
+   const comWin = Winner(_comChoice, selection);
+
+   function Winner(selection,opponentselection) {
+      return (selection.beats === opponentselection.name || selection.beats2 === opponentselection.name);
+   }
+
+//Show the result and scored in HTML
 
    if (userWin === true) {
       document.getElementById("result").innerText= "( ^_^) You Win !! （^_^ ）";
@@ -63,12 +70,6 @@ function findWinner(_comChoice) {
       document.getElementById("result").innerText = "~ It's draw ~";
    }
 }
-
-function isWinner(selection,opponentselection) {
-   return (selection.beats === opponentselection.name || selection.beats2 === opponentselection.name);
-}
-
-
 
 //refresh page with reset button
 
